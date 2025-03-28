@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ITrainee - Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box left">
+            <h1>Olá, bem-vindo ao ITrainee!</h1>
+            <p>Não tem uma conta?</p>
+            <button class="register-btn">
+                <a href="registre-se.html">Registre-se</a>
+            </button>
+        </div>
+
+        <div class="form-box right">
+            <h1>Login</h1>
+            <form class="form-content" id="loginForm">
+                <div class="input-box">
+                    <input type="text" placeholder="Nome de usuário" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                <div class="input-box">
+                    <input type="password" placeholder="Senha" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div class="forgot-link">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+                
+                <p class="social-text">ou faça login com plataformas sociais</p>
+                
+                <div class="social-icons">
+                    <a href="https://accounts.google.com/v3/signin/identifier?checkedDomains=youtube&continue=https%3A%2F%2Fwww.google.com.br%2F&ddm=1&dsh=S-1006260094%3A1733338784778466&ec=GAZAmgQ&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=pt-BR&ifkv=AcMMx-fNOO_o4tr4GIXy-QBmcxmBdeauku534-gzoXtdEpa87hEu63NY4ajV1mG9PGmwYXoD5YafyQ&pstMsg=1"><i class='bx bxl-google'></i></a>
+                    <a href="https://www.linkedin.com/login/pt-br"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsignup%3Fref_cta%3DSign%2Bup%26ref_loc%3Dheader%2Blogged%2Bout%26ref_page%3D%252F%26source%3Dheader-home"><i class='bx bxl-github'></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
