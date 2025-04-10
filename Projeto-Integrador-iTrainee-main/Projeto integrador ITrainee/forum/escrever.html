@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="escrever.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Fórum ITrainee</title>
+    </head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">ITrainee Fórum</a>
+        <div class="nav-links">
+            <a href="itrainee.html" class="nav-link">ITrainee</a>
+            <a href="forum.html" class="nav-link">Fórum</a>
+            <div class="profile-icon">
+                <a href="perfil.html" class="nav-link profile-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="new-thread-section">
+        <div class="form-header">
+            <h2><i class="fas fa-question-circle"></i> Nova Postagem</h2>
+            <p>Compartilhe seu conhecimento ou peça ajuda à comunidade</p>
+        </div>
+        
+        <form id="threadForm" class="thread-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="threadTitle">Título da Postagem</label>
+                    <input type="text" id="threadTitle" placeholder="Ex: Como criar um loop em JavaScript?" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="threadCategory">Categoria</label>
+                    <select id="threadCategory" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="frontend">Front-end</option>
+                        <option value="backend">Back-end</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="career">Carreira</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="threadContent">Detalhes da Postagem</label>
+                <textarea id="threadContent" rows="6" 
+                          placeholder="Descreva sua postagem com detalhes (Mínimo 100 caracteres)" 
+                          minlength="100" required></textarea>
+                <div class="char-counter"><span>0</span>/500</div>
+            </div>
+    
+            <div class="form-group tag-group">
+                <label>Tags (Separe por vírgulas)</label>
+                <input type="text" id="threadTags" 
+                       placeholder="Ex: JavaScript, React, Node.js">
+            </div>
+    
+            <div class="form-actions">
+                <button type="reset" class="cancel-btn">Cancelar</button>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Publicar Postagem
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ITrainee Fórum</h4>
+                <p>O ITrainee foi criado a partir de um projeto integrador da faculdade, foi desenvolvido por Nayana Heslley, Gabriela Rodrigues, Raica dos Reis, Wilker Cavalcante e Lucas Andrade.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="itrainee.html">ITrainee</a></li>
+                    <li><a href="forum.html">Fórum</a></li>
+                    <li><a href="perfil.html">perfil</a></li>
+                    <li><a href="projeto-integrador.html">Sobre nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="escrever.js"></script>
+</body>
+</html>

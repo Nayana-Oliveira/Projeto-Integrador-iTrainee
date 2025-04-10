@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forum.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Fórum ITrainee</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">ITrainee Fórum</a>
+        <div class="nav-links">
+            <a href="itrainee.html" class="nav-link">ITrainee</a>
+            <a href="escrever.html" class="nav-link">Fazer postagem</a>
+            <div class="profile-icon">
+                <a href="perfil.html" class="nav-link profile-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <section class="search-section">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Pesquisar estágio">
+                <div class="search-controls">
+                    <button class="apply-btn">Buscar</button>
+                </div>
+            </div>
+
+            <div class="job-tags">
+                <span class="tag">Desenvolvedor</span>
+                <span class="tag">Back-end</span>
+                <span class="tag">Front-End</span>
+                <span class="tag">Design</span>
+            </div>
+        </section>
+
+        <section class="thread-list">
+            <!-- Tópico 1 -->
+            <article class="thread-card" data-category="js">
+                <div class="thread-header">
+                    <h3 class="thread-title">Como começar com JavaScript?</h3>
+                    <span class="thread-author">por @dev_iniciante</span>
+                </div>
+                <p class="thread-content">Quais são os melhores recursos para aprender JavaScript do zero?</p>
+                <div class="thread-footer">
+                    <span>15 respostas</span>
+                    <span>Última resposta: 2h atrás</span>
+                </div>
+            </article>
+
+            <!-- Tópico 2 -->
+            <article class="thread-card" data-category="html">
+                <div class="thread-header">
+                    <h3 class="thread-title">Dicas para melhorar seu CSS</h3>
+                    <span class="thread-author">por @css_lover</span>
+                </div>
+                <p class="thread-content">Confira algumas dicas para escrever CSS mais eficiente e organizado.</p>
+                <div class="thread-footer">
+                    <span>10 respostas</span>
+                    <span>Última resposta: 1h atrás</span>
+                </div>
+            </article>
+
+            <!-- Tópico 3 -->
+            <article class="thread-card" data-category="node">
+                <div class="thread-header">
+                    <h3 class="thread-title">Criando APIs com Node.js</h3>
+                    <span class="thread-author">por @backend_dev</span>
+                </div>
+                <p class="thread-content">Aprenda a criar APIs robustas usando Node.js e Express.</p>
+                <div class="thread-footer">
+                    <span>20 respostas</span>
+                    <span>Última resposta: 3h atrás</span>
+                </div>
+            </article>
+
+            <!-- Tópico 4 -->
+            <article class="thread-card" data-category="react">
+                <div class="thread-header">
+                    <h3 class="thread-title">Introdução ao React</h3>
+                    <span class="thread-author">por @react_fan</span>
+                </div>
+                <p class="thread-content">Descubra os conceitos básicos do React e como começar a usá-lo.</p>
+                <div class="thread-footer">
+                    <span>25 respostas</span>
+                    <span>Última resposta: 4h atrás</span>
+                </div>
+            </article>
+
+            <!-- Tópico 5 -->
+            <article class="thread-card" data-category="others">
+                <div class="thread-header">
+                    <h3 class="thread-title">Discussão Geral</h3>
+                    <span class="thread-author">por @forum_admin</span>
+                </div>
+                <p class="thread-content">Um espaço para discutir qualquer assunto relacionado a desenvolvimento.</p>
+                <div class="thread-footer">
+                    <span>5 respostas</span>
+                    <span>Última resposta: 30m atrás</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ITrainee Fórum</h4>
+                <p>O ITrainee foi criado a partir de um projeto integrador da faculdade, foi desenvolvido por Nayana Heslley, Gabriela Rodrigues, Raica dos Reis, Wilker Cavalcante e Lucas Andrade.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="itrainee.html">ITrainee</a></li>
+                    <li><a href="forum.html">Fórum</a></li>
+                    <li><a href="perfil.html">perfil</a></li>
+                    <li><a href="projeto-integrador.html">Sobre nós</a></li>
+                </ul>
+            </div>
+    </footer>
+
+    <script src="forum.js"></script>
+</body>
+</html>
